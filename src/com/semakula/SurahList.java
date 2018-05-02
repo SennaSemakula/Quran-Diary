@@ -3,6 +3,7 @@ package com.semakula;
 import java.text.DateFormat;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -71,6 +72,11 @@ public class SurahList {
         return current_date;
     }
 
+    public LocalDate getCurrentDate(){
+        LocalDate date = LocalDate.now();
+        return date;
+    }
+
     private int getSurahIndex(String name){
 
         for(int i = 0; i < checklist.size(); i++){
@@ -124,6 +130,20 @@ public class SurahList {
         }
 
         return count;
+    }
+
+    public int getSurahPosition(String surah_name){
+        int index = 0;
+
+        for(int i = 0; i<=checklist.size(); i++){
+            if(surah_name == checklist.get(i).getName()){
+                index = i;
+                return index;
+            }
+        }
+
+        return -1;
+
     }
 
     public String getRemainingChapters(){

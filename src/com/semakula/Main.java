@@ -12,6 +12,7 @@ public class Main {
         diary1 = new SurahList("Senna's Deen Diary");
 
         diary1.getDeadline();
+
         defaultOptions();
 
     }
@@ -90,6 +91,35 @@ public class Main {
                     diary1.getSurah();
                     printMenu();
                     break;
+                case 5:
+
+
+                    //move following code to another method
+
+                    //select surah
+                    if(diary1.getChecklist().isEmpty()){
+                        System.out.println("Please insert surahs into diary first.");
+                        printMenu();
+                    }else{
+                        System.out.println("Select surah from below\n");
+                        int index = 0;
+
+                        for(int i = 0; i<diary1.getChecklist().size(); i++){
+                            index = i;
+                            String surah_name = diary1.getChecklist().get(i).getName();
+                            System.out.println("\t" + index + "- " + surah_name);
+                        }
+                        String surah_choice = scanner.next();
+
+                        setTime();
+                        //call function
+                        //print out list of surahs to choose from
+
+
+                        printMenu();
+                    }
+
+                    break;
                 case 6:
                     System.out.println("You have completed " + diary1.getProgress() + " of the Quran" +
                                         "\n" + diary1.getRemainingChapters() + " Surahs left to complete");
@@ -101,6 +131,58 @@ public class Main {
                     break;
             }
         }
+
+    }
+
+    private static void setTime(){
+        //find the surah title that the user selected
+        //return the title from the array
+
+        System.out.println("Select an option from the list below");
+
+        System.out.println("0- Set days \t" +
+                "1 - Set weeks \t" +
+                "2 - Set months \t" +
+                "3 - Set Years");
+
+        String choice = scanner.next();
+
+        switch(Integer.parseInt(choice)){
+
+            case 0:
+                System.out.println("Enter number of days you want to set as a target");
+                int result = scanner.nextInt();
+
+                System.out.println("Deadline: " + diary1.getCurrentDate().plusDays(result));
+
+                scanner.nextLine();
+                break;
+            case 1:
+                System.out.println("Enter number of weeks you would like to set as a target");
+                result = scanner.nextInt();
+
+                System.out.println("Deadline: " + diary1.getCurrentDate().plusWeeks(result));
+
+                scanner.nextLine();
+                break;
+            case 2:
+                System.out.println("Enter number of months you would like to set as a target");
+                result = scanner.nextInt();
+
+                System.out.println("Deadline: " + diary1.getCurrentDate().plusMonths(result));
+
+                scanner.nextLine();
+                break;
+            case 3:
+                System.out.println("Enter number of years you would like to set as a target");
+                result = scanner.nextInt();
+
+                System.out.println("Deadline: " + diary1.getCurrentDate().plusYears(result));
+
+                scanner.nextLine();
+                break;
+        }
+
 
     }
 
