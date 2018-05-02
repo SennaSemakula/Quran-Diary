@@ -24,7 +24,7 @@ public class SurahList {
             checklist.add(surah);
             return true;
         }else{
-            System.out.println("Surah: " + name + " already exists in checklist. Unable to add");
+            System.out.println("Surah: " + name + " already exists in your Diary. Unable to add");
             return false;
         }
     }
@@ -37,7 +37,7 @@ public class SurahList {
             checklist.remove(index);
             return true;
         }else{
-            System.out.println("Unable to remove Surah " + name + " as it does not exist in checklist");
+            System.out.println("Unable to remove Surah " + "'" + name + "'" + " as it does not exist in checklist");
             return false;
         }
     }
@@ -56,14 +56,14 @@ public class SurahList {
 
             return true;
         }else{
-            System.out.println("Unable to update Surah: " + old_surah.getName() + " as it currently does not exist");
+            System.out.println("Unable to update Surah: " + "'" + old_surah.getName() + "'" +  " as it currently does not exist in your Diary");
             return false;
         }
 
     }
 
     public Date getDeadline(){
-        DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+        DateFormat dateFormat = new SimpleDateFormat("dd/MM/YYYY");
         Date current_date = new Date();
 
         System.out.println(dateFormat.format(current_date));

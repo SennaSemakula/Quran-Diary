@@ -50,23 +50,27 @@ public class Main {
                     printMenu();
                     break;
                 case 2:
-                    System.out.println("Enter Surah name to update: ");
-                    String old_surah_name = scanner.next();
-                    scanner.nextLine();
+                    if(diary1.getChecklist().isEmpty()){
+                        System.out.println("No Surahs to update!");
+                    }else{
+                        System.out.println("Enter Surah name to update: ");
+                        String old_surah_name = scanner.next();
+                        scanner.nextLine();
 
-                    System.out.println("Enter new Surah name");
-                    String new_surah_name = scanner.next();
-                    scanner.nextLine();
+                        System.out.println("Enter new Surah name");
+                        String new_surah_name = scanner.next();
+                        scanner.nextLine();
 
-                    System.out.println("Enter contents of Surah");
-                    String surah_contents = scanner.next();
-                    scanner.nextLine();
+                        System.out.println("Enter contents of Surah");
+                        String surah_contents = scanner.next();
+                        scanner.nextLine();
 
-                    System.out.println("Enter chapter no. ");
-                    int chapter_no = scanner.nextInt();
-                    scanner.nextLine();
+                        System.out.println("Enter chapter no. ");
+                        int chapter_no = scanner.nextInt();
+                        scanner.nextLine();
 
-                    updateSurah(old_surah_name, new_surah_name, surah_contents, chapter_no);
+                        updateSurah(old_surah_name, new_surah_name, surah_contents, chapter_no);
+                    }
 
                     printMenu();
                     break;
@@ -111,6 +115,7 @@ public class Main {
     private static void removeSurah(String name){
         diary1.removeSurah(name);
     }
+
 
     public static void printMenu(){
         System.out.println("\nEnter a option from the following menu: ");
