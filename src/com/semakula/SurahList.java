@@ -6,12 +6,12 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class CheckList {
+public class SurahList {
     private String name;
     private ArrayList<Surah> checklist;
     private final int total_surahs = 114;
 
-    public CheckList(String name) {
+    public SurahList(String name) {
         this.name = name;
         checklist = new ArrayList<Surah>();
     }
@@ -173,5 +173,9 @@ public class CheckList {
 
        return "End of list";
 
+    }
+
+    public ArrayList<Surah> getChecklist() {
+        return checklist;
     }
 }

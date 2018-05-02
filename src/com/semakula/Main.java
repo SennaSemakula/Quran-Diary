@@ -1,17 +1,15 @@
 package com.semakula;
 
-import com.sun.jnlp.ApiDialog;
-
 import java.util.Scanner;
 
 public class Main {
 
     public static Scanner scanner = new Scanner(System.in);
-    public static CheckList diary1;
+    public static SurahList diary1;
 
     public static void main(String[] args) {
 	// write your code here
-        diary1 = new CheckList("Senna's Deen Diary");
+        diary1 = new SurahList("Senna's Deen Diary");
 
         diary1.getDeadline();
         defaultOptions();
@@ -73,11 +71,15 @@ public class Main {
                     printMenu();
                     break;
                 case 3:
-                    System.out.println("Enter Surah name to remove: ");
-                    String name_removal = scanner.next();
-                    removeSurah(name_removal);
-                    scanner.nextLine();
-
+                    //check if surah is empty
+                    if(diary1.getChecklist().isEmpty()){
+                        System.out.println("No Surahs to remove!");
+                    }else{
+                        System.out.println("Enter Surah name to remove: ");
+                        String name_removal = scanner.next();
+                        removeSurah(name_removal);
+                        scanner.nextLine();
+                    }
                     printMenu();
                     break;
                 case 4:
