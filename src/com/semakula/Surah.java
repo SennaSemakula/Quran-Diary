@@ -1,7 +1,5 @@
 package com.semakula;
 
-import java.lang.reflect.Type;
-
 public class Surah {
     private String name;
     private String content;
@@ -13,10 +11,6 @@ public class Surah {
 
         if(chapter > 0 && chapter <= 114){
             this.chapter = chapter;
-        }else{
-            System.out.println("Unable to create surah notes\n");
-            System.out.println("Invalid surah no." + " Please insert a range from surah 1-114");
-            System.exit(-1);
         }
     }
 
@@ -53,7 +47,7 @@ public class Surah {
     @Override
     public String toString(){
         return "Name of Surah: " + this.name + "\n" +
-                "Chapter: " + this.content + "\n" +
-                "Content: " + this.chapter;
+                "Chapter: " + this.chapter + "\n" +
+                "Content: " + this.content;
     }
 }

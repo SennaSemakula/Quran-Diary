@@ -16,7 +16,8 @@ public class SurahAPI implements ISurah {
     public static void main(String[] args){
         loadJSON("/home/dinopc/Desktop/GitRepos/Quran-Diary/input/surah.json");
         setSurahs();
-        System.out.println(getSurahList().get("Al - Jinn"));
+        System.out.println(getSurahList().get("071"));
+        System.out.println(getSurahList());
     }
 
     //loadJSON("/home/dinopc/Desktop/GitRepos/Quran-Diary/input/surah.json")

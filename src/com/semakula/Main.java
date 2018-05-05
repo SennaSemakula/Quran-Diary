@@ -194,7 +194,12 @@ public class Main {
     }
 
     private static void addSurah(String name, String contents, int chapter){
-        diary1.addSurah(name, contents, chapter);
+        if(chapter > 114){
+            System.out.println("Unable to create surah notes\n");
+            System.out.println("Invalid surah chapter no." + " Please insert a range from surah 1-114");
+        }else{
+            diary1.addSurah(name, contents, chapter);
+        }
     }
 
     private static void removeSurah(String name){
@@ -215,4 +220,3 @@ public class Main {
                             "7 - Quit Application");
     }
 }
-
