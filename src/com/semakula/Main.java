@@ -134,16 +134,19 @@ public class Main {
 
     }
 
-    private static void setTime(){
-        //find the surah title that the user selected
-        //return the title from the array
-
+    private static void printTargetInstructions(){
         System.out.println("Select an option from the list below");
 
         System.out.println("0- Set days \t" +
                 "1 - Set weeks \t" +
                 "2 - Set months \t" +
                 "3 - Set Years");
+    }
+
+    private static void setTime(){
+        //find the surah title that the user selected
+        //return the title from the array
+        printTargetInstructions();
 
         String choice = scanner.next();
 
