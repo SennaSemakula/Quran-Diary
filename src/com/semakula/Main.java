@@ -1,5 +1,6 @@
 package com.semakula;
 
+import java.time.LocalDate;
 import java.util.Scanner;
 
 public class Main {
@@ -11,7 +12,10 @@ public class Main {
 	// write your code here
         diary1 = new SurahList("Senna's Deen Diary");
 
-        diary1.getDeadline();
+        Deadline time = new Deadline();
+        LocalDate new_date = LocalDate.now();
+        time.setDays(12);
+        System.out.println(time.returnDeadline());
 
         defaultOptions();
 
