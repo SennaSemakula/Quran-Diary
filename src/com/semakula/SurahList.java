@@ -208,4 +208,5 @@ public class SurahList {
     public ArrayList<Surah> getChecklist() {
         return checklist;
     }
+    
 }

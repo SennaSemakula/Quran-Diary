@@ -4,12 +4,14 @@ public class Surah {
     private String name;
     private String content;
     private int chapter;
+    private Deadline deadline;
 
     private SurahList surahList;
 
     public Surah(String name, String content, int chapter) {
         this.name = name;
         this.content = content;
+        this.deadline = null;
 
         if(chapter > 0 && chapter <= 114){
             this.chapter = chapter;
