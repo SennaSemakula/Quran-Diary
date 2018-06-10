@@ -117,14 +117,10 @@ public class Main {
                         printMenu();
                     }else{
                         System.out.println("Select surah from below\n");
-                        int index = 0;
 
-                        for(int i = 0; i<diary1.getChecklist().size(); i++){
-                            index = i;
-                            String surah_name = diary1.getChecklist().get(i).getName();
-                            System.out.println("\t" + index + "- " + surah_name);
-                        }
-                        String surah_choice = scanner.next();
+                        diary1.printSurahs();
+
+                       // String surah_choice = scanner.next();
 
                         deadlineManager = new DeadlineManager(diary1);
                         deadlineManager.setMilestone();

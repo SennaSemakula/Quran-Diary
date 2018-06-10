@@ -208,5 +208,13 @@ public class SurahList {
     public ArrayList<Surah> getChecklist() {
         return checklist;
     }
-    
+
+    public void printSurahs(){
+        int counter = 0;
+        for(Surah surah: checklist){
+            counter++;
+            System.out.println("\t" + counter + "- " + surah.getName());
+        }
+    }
+
 }

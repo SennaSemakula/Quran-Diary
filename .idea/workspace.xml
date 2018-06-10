@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3529706d-ae67-4087-8c65-3f6121e3cda8" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/com/semakula/Main.java" afterPath="$PROJECT_DIR$/src/com/semakula/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/semakula/Surah.java" afterPath="$PROJECT_DIR$/src/com/semakula/Surah.java" />
       <change beforePath="$PROJECT_DIR$/src/com/semakula/SurahList.java" afterPath="$PROJECT_DIR$/src/com/semakula/SurahList.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SurahList.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SurahList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/semakula/SurahList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="210" column="4" lean-forward="false" selection-start-line="210" selection-start-column="4" selection-end-line="210" selection-end-column="4" />
+            <state relative-caret-position="165">
+              <caret line="204" column="0" lean-forward="true" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
               <folding>
                 <element signature="e#4378#4379#0" expanded="true" />
                 <element signature="e#4447#4448#0" expanded="true" />
@@ -33,15 +33,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/semakula/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="123" column="41" lean-forward="false" selection-start-line="123" selection-start-column="41" selection-end-line="123" selection-end-column="41" />
+            <state relative-caret-position="156">
+              <caret line="123" column="0" lean-forward="true" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#6155#6156#0" expanded="true" />
-                <element signature="e#6195#6196#0" expanded="true" />
+                <element signature="e#5853#5854#0" expanded="true" />
+                <element signature="e#5893#5894#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -168,10 +168,10 @@
       <find>Enter</find>
       <find>diary</find>
       <find>List completed</find>
-      <find>List com</find>
       <find>PrintTarget</find>
       <find>setName</find>
       <find>setTime</find>
+      <find>List com</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -191,8 +191,8 @@
         <option value="$PROJECT_DIR$/src/com/semakula/Deadline.java" />
         <option value="$PROJECT_DIR$/src/com/semakula/Surah.java" />
         <option value="$PROJECT_DIR$/src/com/semakula/DeadlineManager.java" />
-        <option value="$PROJECT_DIR$/src/com/semakula/Main.java" />
         <option value="$PROJECT_DIR$/src/com/semakula/SurahList.java" />
+        <option value="$PROJECT_DIR$/src/com/semakula/Main.java" />
       </list>
     </option>
   </component>
@@ -473,8 +473,8 @@
           <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#6155#6156#0" expanded="true" />
-            <element signature="e#6195#6196#0" expanded="true" />
+            <element signature="e#5853#5854#0" expanded="true" />
+            <element signature="e#5893#5894#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -560,8 +560,8 @@
           <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#6155#6156#0" expanded="true" />
-            <element signature="e#6195#6196#0" expanded="true" />
+            <element signature="e#5853#5854#0" expanded="true" />
+            <element signature="e#5893#5894#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -647,8 +647,8 @@
           <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#6155#6156#0" expanded="true" />
-            <element signature="e#6195#6196#0" expanded="true" />
+            <element signature="e#5853#5854#0" expanded="true" />
+            <element signature="e#5893#5894#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -753,8 +753,8 @@
           <caret line="149" column="0" lean-forward="false" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#6155#6156#0" expanded="true" />
-            <element signature="e#6195#6196#0" expanded="true" />
+            <element signature="e#5853#5854#0" expanded="true" />
+            <element signature="e#5893#5894#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -773,14 +773,6 @@
             <element signature="e#2114#2115#0" expanded="true" />
             <element signature="e#2138#2139#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/semakula/ISurah.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -833,27 +825,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/semakula/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/semakula/ISurah.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="123" column="41" lean-forward="false" selection-start-line="123" selection-start-column="41" selection-end-line="123" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6155#6156#0" expanded="true" />
-            <element signature="e#6195#6196#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="108">
+          <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/semakula/SurahList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="210" column="4" lean-forward="false" selection-start-line="210" selection-start-column="4" selection-end-line="210" selection-end-column="4" />
+        <state relative-caret-position="165">
+          <caret line="204" column="0" lean-forward="true" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
           <folding>
             <element signature="e#4378#4379#0" expanded="true" />
             <element signature="e#4447#4448#0" expanded="true" />
             <element signature="e#5663#5664#0" expanded="true" />
             <element signature="e#5695#5696#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/semakula/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="123" column="0" lean-forward="true" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5853#5854#0" expanded="true" />
+            <element signature="e#5893#5894#0" expanded="true" />
           </folding>
         </state>
       </provider>
