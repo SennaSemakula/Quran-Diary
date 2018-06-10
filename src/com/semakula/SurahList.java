@@ -83,10 +83,20 @@ public class SurahList {
             String surah_name = checklist.get(i).getName();
             if(surah_name.equals(name)){
                 return i;
+            }else{
+                return -1;
             }
         }
 
         return -1;
+    }
+
+    public boolean checkSurahExists(String name){
+        if(getSurahIndex(name) >= 0){
+            return true;
+        }else{
+            return false;
+        }
     }
 
     private boolean findItem(String name){

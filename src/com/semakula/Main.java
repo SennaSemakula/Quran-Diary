@@ -62,19 +62,29 @@ public class Main {
                         String old_surah_name = scanner.next();
                         scanner.nextLine();
 
-                        System.out.println("Enter new Surah name");
-                        String new_surah_name = scanner.next();
-                        scanner.nextLine();
+                        if(diary1.checkSurahExists(old_surah_name)){
+                            //Prompt user to enter new surah name
+                            System.out.println("Enter new Surah name");
+                            String new_surah_name = scanner.next();
+                            scanner.nextLine();
 
-                        System.out.println("Enter contents of Surah");
-                        String surah_contents = scanner.next();
-                        scanner.nextLine();
+                            //Prompt user to enter the new chapter number
+                            System.out.println("Enter contents of Surah");
+                            String surah_contents = scanner.next();
+                            scanner.nextLine();
 
-                        System.out.println("Enter chapter no. ");
-                        int chapter_no = scanner.nextInt();
-                        scanner.nextLine();
+                            //Prompt user to enter the new surah contents
+                            System.out.println("Enter chapter no. ");
+                            int chapter_no = scanner.nextInt();
+                            scanner.nextLine();
 
-                        updateSurah(old_surah_name, new_surah_name, surah_contents, chapter_no);
+                            updateSurah(old_surah_name, new_surah_name, surah_contents, chapter_no);
+
+
+                        }else{
+                            System.out.println("Surah does not exist! Please enter a valid Surah to update");
+                        }
+
                     }
 
                     printMenu();

@@ -5,6 +5,8 @@ public class Surah {
     private String content;
     private int chapter;
 
+    private SurahList surahList;
+
     public Surah(String name, String content, int chapter) {
         this.name = name;
         this.content = content;
@@ -13,7 +15,6 @@ public class Surah {
             this.chapter = chapter;
         }
     }
-
 
     public String getName() {
         return name;
@@ -43,6 +44,7 @@ public class Surah {
     public void setContent(String content) {
         this.content = content;
     }
+
 
     @Override
     public String toString(){
